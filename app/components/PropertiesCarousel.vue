@@ -46,8 +46,6 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-
 // Props
 defineProps({
   items: {
@@ -88,7 +86,3 @@ onMounted(async () => {
   });
 });
 </script>
-
-<style scoped>
-/* your carousel styles go here */
-</style>

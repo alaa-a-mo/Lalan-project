@@ -2,6 +2,9 @@
     <div>
     <Header />
     <slot />
-    <Footer />
+    <Footer v-if="!route.meta.hideFooter" />
   </div>
 </template>
+<script setup>
+const route = useRoute()
+</script>

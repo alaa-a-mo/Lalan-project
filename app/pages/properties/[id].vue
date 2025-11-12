@@ -1137,10 +1137,10 @@ const properties = [
       },
     ],
     agent: {
-      name: "Erin Jeager",
+      name: "Eren Yeager",
       phone: "(950) 491-570-180",
       email: "support@example.com",
-      website: "erin-jeager.com",
+      website: "eren-yeager.com",
       img: "/images/agents/grid/7.jpg",
     },
   },

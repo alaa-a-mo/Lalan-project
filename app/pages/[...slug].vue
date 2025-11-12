@@ -8,4 +8,7 @@ if (process.server) {
   const event = useRequestEvent()
   event.node.res.statusCode = 404
 }
+definePageMeta({
+  hideFooter: true
+})
 </script>

@@ -1,0 +1,27 @@
+{
+  "pageTitle": "About",
+  "welcome": "Welcome",
+  "features": {
+    "title1": "Presenting Your Property",
+    "desc1": "Duis sed odio sit amet nibh...",
+    "title2": "Renting or Selling",
+    "desc2": "Duis sed odio sit amet nibh...",
+    "title3": "Property Exchange",
+    "desc3": "Duis sed odio sit amet nibh...",
+    "title4": "Buying a Property",
+    "desc4": "Duis sed odio sit amet nibh..."
+  },
+  "agents": {
+    "sectionTitle": "Trusted Agents",
+    "sectionDesc": "Duis aute irure dolor...",
+    "name1": "Steve Martin",
+    "position1": "Buying Agent",
+    "desc1": "Lorem ipsum dolor sit amet...",
+    "name2": "Mark Smith",
+    "position2": "Selling Agent",
+    "desc2": "Lorem ipsum dolor sit amet...",
+    "name3": "Ryan Printz",
+    "position3": "Real Estate Broker",
+    "desc3": "Lorem ipsum dolor sit amet..."
+  }
+}

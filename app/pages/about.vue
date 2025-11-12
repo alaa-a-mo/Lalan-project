@@ -1,8 +1,14 @@
 <template>
   <div>
-    <PageBanner title="About" background="/images/page-titles/1.jpg" />
+    <PageBanner :title="$t('page title')" background="/images/page-titles/1.jpg" />
     <!-- about #1
 ============================================= -->
+<div>
+    <button v-for="locale in locales" @click="setLocale(locale.code)">
+      {{ locale.name }}
+    </button>
+    <h1>{{ $t('welcome') }}</h1>
+  </div>
     <section id="about" class="about bg-white">
       <div class="container">
         <div class="row">
@@ -182,4 +188,6 @@ const agents = [
     },
   },
 ];
+const { locales, setLocale } = useI18n()
+
 </script>

@@ -37,16 +37,10 @@
           <NuxtLink to="/about">About us</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="#">Career</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="#">Services</NuxtLink>
-        </li>
-        <li>
           <NuxtLink to="/properties">Properties</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="#">Contact</NuxtLink>
+          <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
               </ul>
             </div>
@@ -59,16 +53,7 @@
             <div class="widget--content">
               <ul class="list-unstyled mb-0">
         <li>
-          <NuxtLink to="#">Privacy</NuxtLink>
-         </li>
-        <li>
-          <NuxtLink to="#">Terms & Conditions</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="#">Account</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="#">FAQ</NuxtLink>
+          <NuxtLink to="/faq">FAQ</NuxtLink>
         </li>
               </ul>
             </div>

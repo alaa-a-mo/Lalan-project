@@ -40,22 +40,9 @@
             id="navbar-collapse-1"
           >
             <ul class="nav navbar-nav nav-pos-center navbar-left">
-              <!-- Home Menu -->
-              <li class="has-dropdown active">
-                <NuxtLink to="#" data-toggle="dropdown"
-                  class="dropdown-toggle menu-item">home</NuxtLink>
-                <ul class="dropdown-menu">
-                  <li><NuxtLink to="/">home search</NuxtLink></li>
-                  <li><NuxtLink to="/home-map">home map</NuxtLink></li>
-                  <li>
-                    <NuxtLink to="#">home property</NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink to="#">home splash</NuxtLink>
-                  </li>
-                </ul>
+             <li>
+                <NuxtLink to="/">Home</NuxtLink>
               </li>
-              <!-- li end -->
 
               <!-- Pages Menu-->
               <li class="has-dropdown">
@@ -66,185 +53,51 @@
                   >Pages</NuxtLink
                 >
                 <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >agents</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <NuxtLink to="#">All Agents</NuxtLink>
-                      </li>
-                      <li>
-                        <NuxtLink to="#">agent profile</NuxtLink>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >agencies</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <NuxtLink to="#">all agencies</NuxtLink>
-                      </li>
-                      <li>
-                        <NuxtLink to="#">agency profile</NuxtLink>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >blog</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <NuxtLink to="#">blog Grid</NuxtLink>
-                      </li>
-                      <li>
-                        <NuxtLink to="#"
-                          >blog Grid Right</NuxtLink
-                        >
-                      </li>
-                      <li>
-                        <NuxtLink to="#"
-                          >blog Grid Left</NuxtLink
-                        >
-                      </li>
-                      <li>
-                        <NuxtLink to="#">blog single</NuxtLink>
-                      </li>
-                    </ul>
+                  <li>
+                    <NuxtLink to="/about">About</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/about">page about</NuxtLink>
+                    <NuxtLink to="/contact">Contact</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="#">page contact</NuxtLink>
+                    <NuxtLink to="/faq">FAQ</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="#">page FAQ</NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink to="#">page 404</NuxtLink>
+                    <NuxtLink to="/404">404</NuxtLink>
                   </li>
                 </ul>
               </li>
               <!-- li end -->
 
-              <!-- Profile Menu-->
-              <li class="has-dropdown">
-                <NuxtLink
-                  to="#"
-                  data-toggle="dropdown"
-                  class="dropdown-toggle menu-item"
-                  >Profile</NuxtLink
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <NuxtLink to="#">user profile</NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink to="#">social profile</NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink to="#">my properties</NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink to="#"
-                      >favourite properties</NuxtLink
-                    >
-                  </li>
-                  <li>
-                    <NuxtLink to="#">add property</NuxtLink>
-                  </li>
-                </ul>
-              </li>
-              <!-- li end -->
+              
 
               <!-- Properties Menu-->
-              <li class="has-dropdown">
-                <NuxtLink
-                  to="#"
-                  data-toggle="dropdown"
-                  class="dropdown-toggle menu-item"
-                  >Properties</NuxtLink
-                >
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >Properties grid</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <NuxtLink to="#">properties grid</NuxtLink>
-                      </li>
-                      <li>
-                        <NuxtLink to="#"
-                          >properties grid split</NuxtLink
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >properties list</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
+              <li>
                         <NuxtLink to="/properties"
                           >properties list</NuxtLink
                         >
                       </li>
-                      <li>
-                        <NuxtLink to="#"
-                          >properties list split</NuxtLink
-                        >
-                      </li>
-                    </ul>
+
+              <li>
+                <NuxtLink to="/contact">contact</NuxtLink>
+              </li>
+              <li class="has-dropdown">
+                <NuxtLink
+                  to="#"
+                  data-toggle="dropdown"
+                  class="dropdown-toggle menu-item"
+                  >Language</NuxtLink
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <NuxtLink to="#">English</NuxtLink>
                   </li>
-                  <li class="dropdown-submenu">
-                    <NuxtLink
-                      to="#"
-                      data-toggle="dropdown"
-                      class="dropdown-toggle"
-                      >properties single</NuxtLink
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <NuxtLink to="#"
-                          >single gallery</NuxtLink
-                        >
-                      </li>
-                      <li>
-                        <NuxtLink to="#"
-                          >single slider</NuxtLink
-                        >
-                      </li>
-                    </ul>
+                  <li>
+                    <NuxtLink to="#">Arabic</NuxtLink>
                   </li>
                 </ul>
               </li>
               <!-- li end -->
-
-              <li>
-                <NuxtLink to="#">contact</NuxtLink>
-              </li>
             </ul>
             <!-- Module Signup  -->
             <div class="module module-login pull-left">
@@ -417,8 +270,6 @@
     </header>
 </template>
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
 const isAffixed = ref(false)
 const props = defineProps({
   variant: {
@@ -439,5 +290,6 @@ onBeforeUnmount(() => {
 const variantClass = computed(() =>
   props.variant === 'light' ? 'header-light' : 'header-transparent'
 )
+const { locales, setLocale } = useI18n()
 
 </script>

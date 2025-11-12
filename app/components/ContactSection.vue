@@ -10,7 +10,7 @@
           <h3>
             Join our professional team & agents to start selling your house
           </h3>
-          <a href="#" class="btn btn--primary">Contact</a>
+          <a href="/contact" class="btn btn--primary">Contact</a>
         </div>
         <!-- .col-md-6 -->
       </div>

@@ -129,6 +129,48 @@
       <!-- .container end -->
     </section>
     <!-- .feature end -->
+    <!-- city-property
+============================================= -->
+    <section id="city-property" class="city-property text-center pb-70">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="heading heading-2 text-center mb-70">
+            <h2 class="heading--title">Property By City</h2>
+            <p class="heading--desc">
+              Duis aute irure dolor in reprehed in volupted velit esse dolore
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          v-for="(city, index) in cities"
+          :key="city.name"
+          class="col-xs-12"
+          :class="index % 2 === 0 ? 'col-sm-8 col-md-8' : 'col-sm-4 col-md-4'"
+        >
+          <div class="property-city-item">
+            <div class="property--city-img">
+              <NuxtLink :to="`/properties?city=${city.name}`">
+                <img :src="city.img" :alt="city.name" class="img-responsive" />
+                <div class="property--city-overlay">
+                  <div class="property--item-content">
+                    <h5 class="property--title">{{ city.name }}</h5>
+                    <p class="property--numbers">
+                      {{ city.count }} Properties
+                    </p>
+                  </div>
+                </div>
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- .city-property end -->
     <!-- agents
 ============================================= -->
     <section id="agents" class="agents bg-white pt-90">
@@ -553,7 +595,205 @@ const properties = [
       img: "/images/agents/grid/7.jpg",
     },
   },
+  {
+    id: 5,
+    type: "House",
+    title: "House in Kent Street",
+    location: "127 Kent Street, Sydney, NSW 2000",
+    city: "Sydney",
+    country: "Australia",
+    state: "Newcastle",
+    zip: "2000",
+    popupVideo: "https://www.youtube.com/watch?v=nrJtHemSPW4",
+    img: "/images/properties/1.jpg",
+    status: "For Sale",
+    price: "$130,000",
+    date: "02/13/2024",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    features: {
+      beds: 2,
+      baths: 3,
+      area: "587 sq ft",
+      rooms: 6,
+      floors: 3,
+      garage: 2,
+    },
+    featuresList: [
+      "Center Cooling",
+      "Balcony",
+      "Pet Friendly",
+      "Fire Alarm",
+      "Modern Kitchen",
+      "Storage",
+      "Heating",
+      "Pool",
+      "Laundry",
+      "Gym",
+      "Elevator",
+      "Dish Washer",
+    ],
+    floorPlans: [
+      {
+        title: "Ground Floor",
+        size: "800 sq ft",
+        rooms: 2,
+        baths: 1,
+        img: "/images/property-single/1.png",
+      },
+      {
+        title: "First Floor",
+        size: "600 sq ft",
+        rooms: 2,
+        baths: 1,
+        img: "/images/property-single/1.png",
+      },
+      {
+        title: "Second Floor",
+        size: "600 sq ft",
+        rooms: 2,
+        baths: 1,
+        img: "/images/property-single/1.png",
+      },
+    ],
+    reviews: [
+      {
+        name: "Ryan Printz",
+        date: "Feb 12, 2018",
+        rating: 4,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+      {
+        name: "Steve Martin",
+        date: "Jan 16, 2018",
+        rating: 5,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+      {
+        name: "Nicole Smith",
+        date: "Nov 25, 2017",
+        rating: 3,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+    ],
+    agent: {
+      name: "James Bond",
+      phone: "(950) 491-570-180",
+      email: "support@example.com",
+      website: "james-bond.com",
+      img: "/images/agents/grid/7.jpg",
+    },
+  },
+  {
+    id: 6,
+    type: "Villa",
+    title: "Villa in Oglesby Ave",
+    location: "1445 N State Pkwy, Chicago, IL 60610",
+    city: "Chicago",
+    country: "USA",
+    state: "Illinois",
+    zip: "60610",
+    popupVideo: "https://www.youtube.com/watch?v=nrJtHemSPW4",
+    img: "/images/properties/1.jpg",
+    status: "For Rent",
+    price: "$1200",
+    date: "05/25/2024",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    features: {
+      beds: 3,
+      baths: 2,
+      area: "350 sq ft",
+      rooms: 5,
+      floors: 2,
+      garage: 2,
+    },
+    featuresList: [
+      "Center Cooling",
+      "Balcony",
+      "Pet Friendly",
+      "Fire Alarm",
+      "Modern Kitchen",
+      "Storage",
+      "Heating",
+      "Pool",
+      "Laundry",
+      "Gym",
+      "Elevator",
+      "Dish Washer",
+    ],
+    floorPlans: [
+      {
+        title: "Ground Floor",
+        size: "800 sq ft",
+        rooms: 2,
+        baths: 1,
+        img: "/images/property-single/1.png",
+      },
+      {
+        title: "First Floor",
+        size: "600 sq ft",
+        rooms: 3,
+        baths: 1,
+        img: "/images/property-single/1.png",
+      },
+    ],
+    reviews: [
+      {
+        name: "Ryan Printz",
+        date: "Feb 12, 2018",
+        rating: 4,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+      {
+        name: "Steve Martin",
+        date: "Jan 16, 2018",
+        rating: 5,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+      {
+        name: "Nicole Smith",
+        date: "Nov 25, 2017",
+        rating: 3,
+        comment:
+          "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed eiusmod tempor incididun ut labore dolor magna aliqua enim minim veniam, quis nostrud.",
+      },
+    ],
+    agent: {
+      name: "Eren Yeager",
+      phone: "(950) 491-570-180",
+      email: "support@example.com",
+      website: "eren-yeager.com",
+      img: "/images/agents/grid/7.jpg",
+    },
+  },
 ];
+const cityImages = {
+  Sydney: '/images/properties/city/1.jpg',
+  Chicago: '/images/properties/city/2.jpg',
+  Manhatten: '/images/properties/city/3.jpg',
+  'Los Angeles': '/images/properties/city/4.jpg'
+}
+const cities = computed(() => {
+  const map = {}
+  properties.forEach(prop => {
+    if (!map[prop.city]) {
+      map[prop.city] = {
+        name: prop.city,
+        count: 0,
+        img: cityImages[prop.city] || '/images/properties/city/1.jpg'
+      }
+    }
+    map[prop.city].count++
+  })
+  return Object.values(map)
+})
+
 const agents = [
   {
     name: "Steve Martin",
